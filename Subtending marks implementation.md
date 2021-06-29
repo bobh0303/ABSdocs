@@ -4,7 +4,7 @@ such as U+06DD End of Ayah and U+0605 Number Mark Above:
 
   ![subtending marks](images/subtending_marks.png)
 
-_NB: Some of the information and basic OpenType techniques described hearin were learned by studying the [Amiri font feature code](https://github.com/aliftype/amiri/blob/main/sources/enclosing.fea))._
+_NB: Some of the information and basic OpenType techniques described hearin were learned by studying the [Amiri font feature code](https://github.com/aliftype/amiri/blob/main/sources/enclosing.fea)._
 
 ## Background:
 
@@ -31,7 +31,7 @@ The normal glyphs for digits are too large to be displayed with subtending marks
   - for the Disputed End of Ayah mark or
   - if there are 3 digits to be enclosed in an End of Ayah, thus allowing the End of Ayah to retain the same shape no matter whether there are 1, 2 or 3 digits following it.
 
-The exception is Alkalami which uses different widths of End of Ayay for different numbers of digits, and in this case there are just medium digits, no small.
+The exception is Alkalami which uses different widths of End of Ayah for different numbers of digits, and in this case there are just medium digits, no small.
 
 Note also that because of the desire to visually center the digits within End of Ayah, we utilize mono-width designs for all medium and small digits.
 
@@ -102,8 +102,8 @@ etc.
 
 One thing this does for us is automatically create some useful classes:
 - `c_2` all glyphs with `.2` extension
-- `cno_2` corresponding class of glyph names without the `.3` extension
-- `c_3` all glyphs with `.2` extension
+- `cno_2` corresponding class of glyph names without the `.2` extension
+- `c_3` all glyphs with `.3` extension
 - `cno_3` corresponding class of glyph names without the `.3` extension
 
 etc.
