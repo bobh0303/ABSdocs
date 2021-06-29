@@ -128,7 +128,7 @@ Both substitution and positioning rules are needed:
 
 ### Graphite logic
 
-The graphite rules are relatively straightforward attachments using the `digitL` and `digitR` anchors, but of course have to be done in both orders. Details are left to the reader
+The graphite rules are relatively straightforward attachments using the `digitL` and `digitR` anchors, but of course have to be done in both orders. Details are left to the reader.
 
 ### OpenType logic
 
@@ -249,7 +249,7 @@ lookup SignWithDigits {
 Some assumptions:
 
 - for all the digits, the `digitL` and `digitR` APs are positioned exactly on the sidebearings (this simplifies the math somewhat).
-- all the medium digits have the same width and anchors, and similarly for the small digits if used. This means it doesn't matter which particular medium digit or small digit we use. I've chosen `zero.medium` and `zero.small`
+- all the medium digits have the same width and anchors, and similarly for the small digits if used. This means it doesn't matter which particular medium digit or small digit we use for calculations. I've chosen `zero.medium` and `zero.small`
 - in our FEAX code, we let:
   - `m` represent the subtending mark glyph
   - `w` represent the the _negative_ of the width of the digits, which can be calculated in FEAX using, for example:
