@@ -321,4 +321,4 @@ One last step is to put all this together with some FEAX that iterates through t
   - Omits vertical kerning calculations
 - [Harmattan](https://github.com/silnrsi/font-harmattan/blob/ce981527459389cce3749bfe9de531aa0d789d09/source/opentype/master.feax#L923)
   - At present this is the oldest version of the code and doesn't actually use iteration of the subtending marks.
-  - Also omits vertical kerning claculations
+  - Also omits vertical kerning calculations
