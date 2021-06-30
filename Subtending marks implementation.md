@@ -10,7 +10,7 @@ _NB: Some of the information and basic OpenType techniques described hearin were
 
 U+06DD is the Arabic "End of Ayah" character that encloses a digit or two (or three) and is one of a number of “subtending marks” defined by Unicode.
 
-Unfortunately, due to Unicode history the OpenType font logic is slightly more complex than it otherwise would be. For details details of the problem see [this proposal](http://www.unicode.org/cgi-bin/GetMatchingDocs.pl?L2/06-332), but in essence: 
+Unfortunately, due to Unicode history the OpenType font logic is slightly more complex than it otherwise would be. For details of the problem see [this proposal](http://www.unicode.org/cgi-bin/GetMatchingDocs.pl?L2/06-332), but in essence: 
 - Prior to Unicode 5.1 the subtending marks could end up in a different directional run from the digits that followed, in some cases making the order appear backwards (visually the digits were left of the subtending mark) and font implementation difficult. 
 - Starting in Unicode 5.1 the subtending marks were changed from Bidirectional_Class=AL to AN. This has the effect of putting the subtending mark and the digit sequence in the same directional run, making them easier to implement correctly.
 
