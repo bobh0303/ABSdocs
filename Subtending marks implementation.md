@@ -285,7 +285,7 @@ pos $m  @DigitsAnyMedium' <$x1 $y $w 0> @DigitsAnyMedium' @DigitsAnyMedium' ;
 
 (For refresher on the `<...>` value record, see [Value record format B](https://github.com/adobe-type-tools/afdko/blob/develop/docs/OpenTypeFeatureFileSpecification.md#value-record-format-b) in the Adobe FEA specification.)
 
-Considering the second digit, we want to move it from its starting position to a position immediately right of the first digit. Again we need to know the starting position of the second digit and this may surprise the reader. Because we removed the advance width of the first digit when we kerned it, the starting position of the second digit is the same as the first digit: immediately right of the subtending mark glyph. The kern distance for the second digit is, therefore, the same as the that for the first but to the right the width of the first digit. Because `w` is negative, we calculate the second digit's kern in FEAX as:
+Considering the second digit, we want to move it from its starting position to a position immediately right of the first digit. Again we need to know the starting position of the second digit and this may surprise the reader. Because we removed the advance width of the first digit when we kerned it, the starting position of the second digit is the same as the first digit: immediately right of the subtending mark glyph. The kern distance for the second digit is, therefore, the same as that of the first but to the right by the width of the first digit. Because `w` is negative, we calculate the second digit's kern in FEAX as:
 
 ```
 let x2 = x1 - w;
