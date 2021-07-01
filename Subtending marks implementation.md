@@ -285,7 +285,7 @@ pos $m  @DigitsAnyMedium' <$x1 $y $w 0> @DigitsAnyMedium' @DigitsAnyMedium' ;
 
 (For refresher on the `<...>` value record, see [Value record format B](https://github.com/adobe-type-tools/afdko/blob/develop/docs/OpenTypeFeatureFileSpecification.md#value-record-format-b) in the Adobe FEA specification.)
 
-Considering the second digit, we want to move it from its starting position to a position immediately right of the first digit. Again we need to know the starting position of the second digit and this may surprise the reader. Because we removed the advance width of the first digit when we kerned it, the starting position of the second digit is the same as the first digit: immediately right of the subtending mark glyph. The kern distance for the second digit is, therefore, the same as the that for the first but to the right the width of the first digit. Because `w` is negative, we calculate the second digit's kern in FEAX as:
+Considering the second digit, we want to move it from its starting position to a position immediately right of the first digit. Again we need to know the starting position of the second digit and this may surprise the reader. Because we removed the advance width of the first digit when we kerned it, the starting position of the second digit is the same as the first digit: immediately right of the subtending mark glyph. The kern distance for the second digit is, therefore, the same as that of the first but to the right by the width of the first digit. Because `w` is negative, we calculate the second digit's kern in FEAX as:
 
 ```
 let x2 = x1 - w;
@@ -321,4 +321,4 @@ One last step is to put all this together with some FEAX that iterates through t
   - Omits vertical kerning calculations
 - [Harmattan](https://github.com/silnrsi/font-harmattan/blob/ce981527459389cce3749bfe9de531aa0d789d09/source/opentype/master.feax#L923)
   - At present this is the oldest version of the code and doesn't actually use iteration of the subtending marks.
-  - Also omits vertical kerning claculations
+  - Also omits vertical kerning calculations
