@@ -223,8 +223,7 @@ lookup SignWithDigits {
     sub @DigitsAny' lookup SignDigits_ToMedium_target
         @DigitsAny' lookup SignDigits_ToMedium_target 
         @DigitsAny' lookup SignDigits_ToMedium_target
-        [ year-ar samvat-ar pagenumber-ar numbermark-ar number-ar]' 
-          lookup SignWith_3digits_target ;
+        [ year-ar samvat-ar pagenumber-ar numbermark-ar number-ar]' lookup SignWith_3digits_target ;
 
     # Handle 3 digits followed by End of Ayah
     sub @DigitsAny' lookup SignDigits_ToSmall_target
