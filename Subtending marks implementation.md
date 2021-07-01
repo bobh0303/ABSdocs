@@ -190,7 +190,7 @@ lookup SignWithDigits {
         @DigitsAny' lookup SignDigits_ToMedium_target ;
 
     # Handle subtending mark (other than End of Ayah) followed by 3 digits
-    sub [ year-ar samvat-ar pagenumber-ar numbermark-ar number-ar endofayah-ar ]' lookup SignWith_3digits_target 
+    sub [ year-ar samvat-ar pagenumber-ar numbermark-ar number-ar ]' lookup SignWith_3digits_target 
         @DigitsAny' lookup SignDigits_ToMedium_target
         @DigitsAny' lookup SignDigits_ToMedium_target
         @DigitsAny' lookup SignDigits_ToMedium_target ;
